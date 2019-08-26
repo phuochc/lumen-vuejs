@@ -14,3 +14,26 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->group([
+    'prefix' => 'authors'
+], function () use ($router) {
+    $router->get('', [
+        'uses' => 'AuthorController@index',
+    ]);
+    $router->get('/{author}', [
+        'uses' => 'AuthorController@show',
+    ]);
+    $router->post('', [
+        'uses' => 'AuthorController@store',
+    ]);
+    $router->put('/{author}', [
+        'uses' => 'AuthorController@update',
+    ]);
+    $router->patch('/{author}', [
+        'uses' => 'AuthorController@update',
+    ]);
+    $router->delete('/{author}', [
+        'uses' => 'AuthorController@destroy',
+    ]);
+});
