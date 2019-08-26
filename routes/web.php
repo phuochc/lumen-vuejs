@@ -14,11 +14,3 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
-
-$router->group([
-	'prefix' => 'certificate'
-], function () use ($router) {
-	$router->get('/list', [
-        'uses' => 'CertificateController@getList',
-    ]);
-});

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "458aaee8e3716a16a84a6d70f17188b9",
+    "content-hash": "c8cc3f8f1d44c37ef9a496ab08e295bd",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -1457,6 +1457,39 @@
                 "lumen"
             ],
             "time": "2019-07-30T15:32:45+00:00"
+        },
+        {
+            "name": "maxsky/lumen-app-key-generator",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maxsky/Lumen-AppKey-Generator.git",
+                "reference": "f6c588e0034f1681633ed4c9cfe1fcaf22f26267"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maxsky/Lumen-AppKey-Generator/zipball/f6c588e0034f1681633ed4c9cfe1fcaf22f26267",
+                "reference": "f6c588e0034f1681633ed4c9cfe1fcaf22f26267",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Console\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Max Sky",
+                    "email": "max940213@live.com"
+                }
+            ],
+            "description": "Set the application key in Lumen Framework.",
+            "time": "2019-03-07T05:44:45+00:00"
         },
         {
             "name": "monolog/monolog",
