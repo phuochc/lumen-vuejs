@@ -13,8 +13,6 @@ class CertificateController extends Controller
     /**
      * CertificateController constructor.
      * @param Request $request
-     * @param CertificateService $certificateService
-     * @author Phuoc Hua 2018-06-07
      */
     public function __construct(Request $request)
     {
@@ -24,9 +22,5 @@ class CertificateController extends Controller
     public function getList()
     {
         $params = $this->_request->all();
-
-        $result = $this->_certificateService->getList($params);
-
-        return Api::response($result);
     }
 }
