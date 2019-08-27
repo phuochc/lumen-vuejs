@@ -12,9 +12,4 @@ class Author extends Model
         'gender',
         'country',
     ];
-
-    public function books()
-    {
-        return $this->hasMany(Book::class);
-    }
 }
