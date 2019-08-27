@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\Authors\StoreAuthorRequest;
 use App\Models\Author;
 use App\Repositories\AuthorRepository;
+use App\Services\AuthorService;
 use App\Traits\ApiResponser;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -13,10 +14,16 @@ class AuthorController extends Controller
 {
     use ApiResponser;
     protected $_authorRepository;
+    /**
+     * The service to consume the authors micro service
+     * @var AuthorService
+     */
+    public $authorService;
 
-    public function __construct(AuthorRepository $authorRepository)
+    public function __construct(AuthorRepository $authorRepository, AuthorService $authorService)
     {
         $this->_authorRepository = $authorRepository;
+        $this->authorService = $authorService;
     }
 
     /**
