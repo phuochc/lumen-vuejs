@@ -1,9 +1,14 @@
 <?php
-
+/**
+ * Created by PhpStorm.
+ * User: admin
+ * Date: 8/27/2019
+ * Time: 9:55 AM
+ */
 use Illuminate\Database\Seeder;
 use App\Models\Book;
 
-class DatabaseSeeder extends Seeder
+class BooksTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
