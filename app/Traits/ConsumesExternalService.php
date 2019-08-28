@@ -16,7 +16,7 @@ trait ConsumesExternalService
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
     public function performRequest($method, $requestUrl, $formParams = [], $headers = [])
-    {
+    {dd(1);
         $client = new Client([
             'base_uri' => $this->baseUri,
         ]);
