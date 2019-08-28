@@ -4,6 +4,11 @@ use Illuminate\Http\Response;
 
 trait ApiResponser
 {
+    public function successResponseOld($data, $code = Response::HTTP_OK)
+    {
+        return response()->json(['data' => $data], $code);
+    }
+
     /**
      * Build success response
      * @param string|array $data

@@ -29,7 +29,6 @@ $app->withEloquent();
  * Register config files
  */
 $app->configure('services');
-$app->configure('database');
 
 /*
 |--------------------------------------------------------------------------

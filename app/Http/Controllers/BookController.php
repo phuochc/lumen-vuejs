@@ -33,9 +33,9 @@ class BookController extends Controller
      */
     public function index()
     {
-        $books = Book::with('author')->get();
+        $books = Book::all();
 
-        return $this->successResponse($books);
+        return $this->successResponseOld($books);
     }
 
     /**
